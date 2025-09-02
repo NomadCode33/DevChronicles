@@ -1,3 +1,3 @@
-**WORK IN PROGRESS**
+# WORK IN PROGRESS
 
-Link to project: https://dnd-compendium.netlify.app/
+**Link to project:** https://dnd-compendium.netlify.app/
