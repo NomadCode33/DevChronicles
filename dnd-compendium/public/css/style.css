@@ -22,6 +22,7 @@
 /*******************************************/
 body {
   font-family: "Rubik", sans-serif;
+  background-color: black;
   /*background-image: url('../img/shenronplaymat.png');*/
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,18 +35,15 @@ body {
   font-family: "Bangers", "Rubik", sans-serif;
 }
 
-/*.description, .gender, .ki, .max-ki,
-.race, .affiliation, .transformation {
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  font-size: 16.5px;
-}*/
+.comp-item {
+  color: rgb(245, 193, 66);
+}
 
 /******************************************
 /* HEADER SECTION
 /*******************************************/
 header {
-  background-color: rgb(236, 149, 54);
+  background-color: rgb(136, 8, 8);
   height: 50px;
 }
 
@@ -56,8 +54,9 @@ header {
 }
 
 .icon {
-  margin: 8.5px 0 0 5px;;
-  width: 25%;
+  margin: 8.5px 0 0 9px;;
+  width: 22%;
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.9));
 }
 
 .header-box {
@@ -87,10 +86,10 @@ header {
 .nav-button {
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #001833;
+  border: 1px solid rgb(249, 246, 238);
   background-color: transparent;
   vertical-align: middle;
-  color: #001833;
+  color: rgb(249, 246, 238);
   text-transform: uppercase;
   font-size: 14px;
   border-radius: 3px;
@@ -98,70 +97,42 @@ header {
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav-button:hover {
-  background-color: rgb(201, 42, 40);
-  border: 1px solid rgb(201, 42, 40);
-  color: white; /* or the header background color for contrast */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgb(40, 40, 43);
+  border: 1px solid rgb(40, 40, 43);
+  color: rgb(245, 193, 66); /* or the header background color for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 /**************************************************************
 /* PIC REST & DISCLAIMER
 /**************************************************************/
 .pic-rest {
-  height: 800px;
-  background-image: url('../img/kamehouse.png');
+  height: 600px;
+  margin: 0 auto;
+  width: 85%;
+  background-image: url('../img/dndbanner.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 30vh; /* makes sure it fills screen */
 }
 
-.pop-title {
-  margin: 0;
-  height: 800px;
-  font-size: 120px;
-  text-align: center;
-  line-height: 6.5;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
-
-  color: #e0e6f8; /* pale silvery blue */
-  text-shadow:
-    0 0 5px #ffffff,
-    0 0 10px #a8c0ff,
-    0 0 20px #91a7ff,
-    0 0 40px #7c8cff;
-  animation: ui-glow 1.5s infinite alternate ease-in-out;
-}
-
-@keyframes ui-glow {
-  from {
-    text-shadow:
-      0 0 3px #ffffff,
-      0 0 6px #a8c0ff,
-      0 0 12px #91a7ff,
-      0 0 24px #7c8cff;
-  }
-  to {
-    text-shadow:
-      0 0 8px #ffffff,
-      0 0 16px #a8c0ff,
-      0 0 32px #91a7ff,
-      0 0 64px #7c8cff;
-  }
-}
-
 .disclaimer {
-  height: 200px;
+  height: 150px;
+  margin: 0 auto;
+  width: 90%;
   color: rgb(245, 193, 66);
-  background-color: rgb(201, 42, 40);
+  background-color: rgb(136, 8, 8);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
 }
 
 .disclaimer-content {
-  padding: 0 150px 0 150px;
+  padding: 0 100px 0 100px;
 }
 
 .disclaimer-content h2 {
@@ -183,8 +154,10 @@ header {
 /* DEMO AREA
 /*******************************************/
 .demo-area {
-  background-color: rgb(236, 149, 54);
-  height: 550px;
+  background-color: rgb(136, 8, 8);
+  margin: 0 auto;
+  height: 1800px;
+  width: 90%;
 }
 
 .box-container {
@@ -193,14 +166,14 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   height: auto;
-  background-color: white;
+  background-color: rgb(40, 40, 43);
 }
 
 .feature {
   margin: 1px auto;
   height: 450px;
   margin-bottom: 0;   
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,7 +184,7 @@ header {
 }
 
 .feature img {
-  width: 80%;
+  width: 70%;
   border: 1px solid #001833;
   border-radius: 3px;
   height: auto;
@@ -224,16 +197,17 @@ header {
 
 .page-describe {
   padding: 0 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
+  color: rgb(249, 246, 238);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .main-button {
   display: inline-block;
   padding: 8px 16px;
-  border: 1px solid #001833;
+  border: 1px solid rgb(249, 246, 238);
   background-color: transparent;
   vertical-align: middle;
-  color: #001833;
+  color: rgb(249, 246, 238);
   text-transform: uppercase;
   font-size: 14px;
   border-radius: 3px;
@@ -241,21 +215,25 @@ header {
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .main-button:hover {
   background-color: rgb(201, 42, 40);
   border: 1px solid rgb(201, 42, 40);
-  color: white; /* or the header background color for contrast */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: rgb(245, 193, 66); /* or the header background color for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 /******************************************
 /* FOOTER
 /*******************************************/
 .background-footer {
-  height: 75px;
-  background-color: rgb(236, 149, 54);
+  height: 150px; /*It was at 75 before*/
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(136, 8, 8);
 }
 
 /******************************************************************
