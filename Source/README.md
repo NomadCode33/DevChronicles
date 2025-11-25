@@ -1,4 +1,5 @@
 # Source
+A responsive marketing website recreated from a third-party mockup using HTML and CSS, featuring clean navigation, a strong call-to-action, and organized feature sections—demonstrating my ability to turn visual designs into fully functional interfaces.
 
 **Link to project:** https://source-layout-nomadcode33.netlify.app/
 
