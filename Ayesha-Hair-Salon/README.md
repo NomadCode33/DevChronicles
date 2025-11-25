@@ -8,29 +8,25 @@ A stylish, responsive landing page for a fictional hair salon, Ayesha, built wit
 **Tech used:** <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"> <img alt="HTML5 Badge" src="https://img.shields.io/badge/-HTML5-000000?style=flat&logo=HTML5"></a> 
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"> <img alt="CSS3 Badge" src="https://img.shields.io/badge/-CSS3-000000?style=flat&logo=CSS"></a> 
 
-When I started this project, I tried something different. I was building out the website while styling as I go on each section I worked on so I can challenge myself to remain on flow while working a bit faster and saving a lot more time in the long run. It's so that I work under pressure in the long run. I pinpointed about major four sections about the website: the navigation bar, the booking online section for blonde highlights, the services provided, and making your momentum in style.
+When I started this project, I decided to approach it differently. Instead of building the full layout first and styling afterward, I styled each section as I built it. This helped me stay in flow, push myself to work faster, and get used to creating under pressure—something I want to improve long-term. I identified four major parts of the website to focus on: the navigation bar, the booking section for blonde highlights, the services section, and the “momentum in style” section.
 
-The navigation bar had three sections of the website title, the navigation of the website itself, as well as the book online button. I made the width of the boxes around 33.3% and floated them. The second section had 8 elements within it, so I made the section that held them 60% to make the navigation bar fill the entire screen and I later changed the width of the first and third boxes 20%. The second box I made each element 12.5% to make it fill the entire box. which I organized using floats to align the elements neatly across the top. After that, I positioned the rest of the elements normally and styled them using padding, margins, and spacing to keep everything clean and readable.
+### Navigation Bar
+The navigation bar consisted of three main parts: the site title, the navigation links, and the “Book Online” button. I initially set each of these sections to 33.3% width and floated them to align horizontally. Because the second section contained eight navigation elements, I later adjusted the layout: the first and third sections were reduced to 20% width each, giving the center section 60% width. Each navigation item inside that center section was sized at 12.5% so all eight items fit cleanly across the bar. Floats, spacing, and padding helped me keep everything aligned and readable.
 
+### Blonde Highlights Booking Section
+This section included informational content and discounts on the left, with a featured image on the right. Since the design splits the layout evenly, I set both sides to roughly 50% width using floats. The left side included a button linking to the services, along with details about booking online. I designed this area to stand out visually, serving as a strong entry point for customers looking to elevate their style.
 
+### Services Provided
+The services section showcased three feature blocks centered in the page. Each feature included an icon, a title, and descriptive text, all contained within a square box. With three features in total, I sized each block at about 30% width so they would fit neatly inside a 60% container. This created balanced spacing, maintained symmetry, and kept the layout consistent with the intended design.
 
-The second section—the “Why” section—was much more straightforward. I focused on strong spacing, proper padding, and a clean layout to make the content easy to process.
-
-The third section was easily the second most challenging part of the project. Both of the “visit options” columns shared the exact same structure, so I grouped each one into sections using the same class to avoid repeating code. After that, I reused and adjusted the button styling from the navigation area, scaling the measurements to make the buttons more prominent. Once the content for both columns was finalized, I floated them side by side to mirror the design of the mockup.
-
-The fourth section closely mirrored the “Why” section, but this time it included a button meant to redirect the user to a page with volunteer opportunities. I reused the same structural framework from the earlier section and integrated the button so the section stayed visually consistent with the rest of the design.
-
-The fifth section was, without a doubt, the hardest. It involved multiple subsections, each of which required precise float usage to match the mockup exactly. Once I understood how each piece fit together, everything started to click into place. After completing the layout, I chose a strong, bold font that captured the feeling and energy I wanted the site to have—unique, eye-catching, and full of presence.
+### Momentum Section
+The momentum section required floating both the text and the accompanying image to the right, again using a 50/50 layout split. I reused the button styling from the navigation bar to keep visual consistency across the site. This section ties everything together, reinforcing the project’s theme of helping customers build confidence and momentum through style.
 
 ## Optimizations
-One small visual change I made was adding white edges along the sides of the screen. It’s subtle, but it gives the website a more modern, sleek feel, and makes the layout easier on the eyes. It also helps set the site apart and makes the design feel more intentional.
 
-The bottom section with the social media links originally threw me off. It didn’t make sense visually until I shifted my perspective and started viewing everything as boxes when working with floats. Once I did that, everything finally clicked—the entire layout became more intuitive. Understanding floats as a system of boxes made the whole structure fall into place and gave me a much clearer sense of control over the design.
 
 ## Lessons Learned:
-Through this project, I learned the importance of establishing the structure of a website before worrying about design. Getting the foundation in place first—how each section is laid out, how the content flows, and how everything connects—makes the rest of the process much smoother. Once the structure is solid, I can shift my focus to the aesthetics and styling without feeling overwhelmed. Breaking the work into phases like this helps me pace myself and ultimately saves time.
-
-I also gained a much deeper understanding of floats. Mastering them took repetition, but the more I worked with floats, the more the patterns began to make sense. By the time I reached the fifth section, everything finally clicked: floats are essentially about treating each element like a box and applying the right spacing and math to position them correctly. That realization brought everything full circle and made the entire layout process much more intuitive.
+Throughout this project, I continued to strengthen my understanding of CSS floats, especially when working through more complex layout patterns. These challenges pushed me to think differently about structure and spacing, and they helped me become more confident in handling traditional layout techniques. Building this way is important for me because I want to stay versatile in the kinds of websites I create—both for future personal projects and for any professional work where adaptable front-end skills are essential.
 
 ## More Projects:
 Feel free to explore some of my other projects in my portfolio:
