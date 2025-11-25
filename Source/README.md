@@ -10,18 +10,19 @@ A responsive marketing website recreated from a third-party mockup using HTML an
 **Tech used:** <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"> <img alt="HTML5 Badge" src="https://img.shields.io/badge/-HTML5-000000?style=flat&logo=HTML5"></a> 
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"> <img alt="CSS3 Badge" src="https://img.shields.io/badge/-CSS3-000000?style=flat&logo=CSS"></a> 
 
-I first started with the structure of the website so I had a good idea of what the foundation will look like. From what I gleamed, there were 3 major sections of the website the I had to tackle and focus on one by one. The first section included the navigation bar, which I organized using floats to align the elements neatly across the top. After that, I positioned the rest of the elements normally and styled them using padding, margins, and spacing to keep everything clean and readable.
+When starting this project, I focused first on building the structure so I had a clear understanding of the foundation before moving into styling. From what I gathered, the site was divided into three major sections, so I approached each one individually.
 
-The second section involved floating both the search bar area and the picture to the right of it. I made each section that both resided separately in float by around 50% since they both took up both halves of the website. The for the search bar, I had to float the search bar and button next to each other to make sure that they are form fitted while putting the appropriate text on top and on the bottom of them to match the website vibe.
+The first section included the navigation bar, which I aligned using floats to keep all the elements neatly positioned across the top. After setting up the navigation, I laid out the remaining elements normally and styled them with padding, margins, and spacing to maintain a clean, readable layout.
 
-The last section was a bit of a puzzle that I solved using some basic logic. Each feature section had their own content contained in their square with an icon and link. There were four total sections in total, so I made the feature boxes around 23% in width to account for the small amount of margin to make them spaced correctly. 
+The second section required floating both the search bar area and the accompanying image to the right. Since the layout split the page evenly, I set each floated section to roughly 50% width. For the search bar itself, I floated the input field and button next to each other so they fit naturally together, then placed the text above and below them to match the original design.
+
+The final section was more of a puzzle, but I approached it with basic layout logic. Each feature block had its own icon, text, and link contained inside a square. There were four features total, so I sized each feature box at around 23% width to allow just enough margin between them. This created even spacing and matched the original design while maintaining visual consistency.
 
 ## Optimizations
-A small change I made was amongst features 1 & 3. There was a different icon for feature 3 that wasn't clear like the icons for the other features. I put that shady icon there, but I didn't like it. The website was great, and I felt like putting that icon would sour the entire website since it looked uncouth and unprofessional. So I opted to use the icon from feature 1, since both feature 1 and 3 had circle icons which helped to make it fit better and make the website appealing to the eye.
+A small but important optimization involved the icons in features 1 and 3. The original icon for feature 3 wasn’t very clear and didn’t match the visual quality of the others—it looked unpolished and out of place. I initially added it, but it disrupted the aesthetic of the entire layout. To maintain consistency, I replaced it with the icon used in feature 1, since both features used circular icon styles. This small change made the entire section feel more cohesive, professional, and visually appealing.
 
 ## Lessons Learned:
-Images
-Using general eyesight to 
+Throughout this project, I learned how important it is to maintain consistent form factors across all elements, especially when designing for multiple screen sizes. I also became much more comfortable integrating images into floated layouts and learned to trust my intuition when making visual adjustments. Because there weren’t many references or examples available online, I often had to rely on careful observation and subtle tweaks to get everything just right. This experience helped sharpen my eye for layout details and strengthened my ability to interpret and recreate design mockups accurately.
 
 ## More Projects:
 Feel free to explore some of my other projects in my portfolio:
