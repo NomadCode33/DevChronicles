@@ -94,6 +94,6 @@ Feel free to explore some of my other projects in my portfolio:
 **Ayesha Hair Salon:** [Ayesha Hair Salon](https://github.com/NomadCode33/DevChronicles/tree/main/Ayesha-Hair-Salon)
 
 **Level Ground:** [Level Ground](https://github.com/NomadCode33/DevChronicles/tree/main/Level-Ground)
-
 <br>
+
 **Profile:** [NomadCode33](https://github.com/NomadCode33)
