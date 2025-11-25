@@ -13,13 +13,13 @@ When I started this project, I decided to approach it differently. Instead of bu
 #### Navigation Bar
 The navigation bar consisted of three main parts: the site title, the navigation links, and the “Book Online” button. I initially set each of these sections to 33.3% width and floated them to align horizontally. Because the second section contained eight navigation elements, I later adjusted the layout: the first and third sections were reduced to 20% width each, giving the center section 60% width. Each navigation item inside that center section was sized at 12.5% so all eight items fit cleanly across the bar. Floats, spacing, and padding helped me keep everything aligned and readable.
 
-### Blonde Highlights Booking Section
+#### Blonde Highlights Booking Section
 This section included informational content and discounts on the left, with a featured image on the right. Since the design splits the layout evenly, I set both sides to roughly 50% width using floats. The left side included a button linking to the services, along with details about booking online. I designed this area to stand out visually, serving as a strong entry point for customers looking to elevate their style.
 
-### Services Provided
+#### Services Provided
 The services section showcased three feature blocks centered in the page. Each feature included an icon, a title, and descriptive text, all contained within a square box. With three features in total, I sized each block at about 30% width so they would fit neatly inside a 60% container. This created balanced spacing, maintained symmetry, and kept the layout consistent with the intended design.
 
-##### Momentum Section
+#### Momentum Section
 The momentum section required floating both the text and the accompanying image to the right, again using a 50/50 layout split. I reused the button styling from the navigation bar to keep visual consistency across the site. This section ties everything together, reinforcing the project’s theme of helping customers build confidence and momentum through style.
 
 
