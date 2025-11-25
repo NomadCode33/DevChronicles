@@ -35,9 +35,9 @@ I also gained a much deeper understanding of floats. Mastering them took repetit
 ## More Projects:
 Feel free to explore some of my other projects in my portfolio:
 
-**DragonDex:** [DragonDex](https://github.com/NomadCode33/DevChronicles/tree/main/DragonDex)
+**Personal Website:** [Website](https://github.com/NomadCode33/DevChronicles/tree/main/Portfolio)
 
-**Level Ground:** [Level Ground](https://github.com/NomadCode33/DevChronicles/tree/main/Level-Ground)
+**D&D Compendium:** [D&D Compendium](https://github.com/NomadCode33/DevChronicles/tree/main/dnd-compendium)
 <br>
 <br>
 
