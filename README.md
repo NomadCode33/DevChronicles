@@ -1,2 +1,2 @@
 # DevChronicles
-A repository that holds my software engineering projects
+A repository that showcases my software engineering projects
