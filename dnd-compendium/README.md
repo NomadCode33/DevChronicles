@@ -1,6 +1,8 @@
 # D&D Compendium
-## WORK IN PROGRESS
+## CURRENTLY IN DEVELOPMENT
 ### Updates will be shown in the dev log regarding its progress
+
+The D&D Compendium is a fully responsive web app built from scratch as an interactive resource for D&D players, currently in development. With a sleek, user-friendly design and a third-party API powering dynamic search across spells, classes, races, and more, it provides an engaging, intuitive experience that puts all the information players need right at their fingertips.
 
 **Link to project:** *Will be provided once project is complete*
 
