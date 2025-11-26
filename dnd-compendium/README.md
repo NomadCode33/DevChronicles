@@ -16,13 +16,13 @@
 <a href="https://expressjs.com/" target="_blank" rel="noreferrer"> <img alt="Express Badge" src="https://img.shields.io/badge/-Express-000000?style=flat&logo=Express"></a>
 <a href="https://render.com/" target="_blank" rel="noreferrer"> <img alt="Render Badge" src="https://img.shields.io/badge/-Render-000000?style=flat&logo=Render"></a>
 
-*Description will be available after the project is complete*
+*Description will be available once the project is complete*
 
 ## Dev Log
 **Date:** 
 
 ## Lessons Learned:
-*Summary will come after the project is complete*
+*Summary will come once the project is complete*
 
 ## More Projects:
 Feel free to explore some of my other projects in my portfolio:
