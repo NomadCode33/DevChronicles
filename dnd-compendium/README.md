@@ -1,6 +1,6 @@
 # D&D Compendium
 ## WORK IN PROGRESS
-**Updates will be prevalent in the dev log regarding its progress**
+**Updates will be shown in the dev log regarding its progress**
 
 **Link to project:** *Will be provided once project is complete*
 
