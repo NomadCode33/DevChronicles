@@ -1,7 +1,8 @@
 # D&D Compendium
 # WORK IN PROGRESS
+**Updates will be prevalent in the dev log regarding its progress**
 
-**Link to project:** https://dnd-compendium.onrender.com/
+**Link to project:** *Will be provided once project is complete*
 
 <img src="./assets/d&dfrontpage.png" img alt = "D&D Compendium Front Page"/>
 
@@ -15,11 +16,21 @@
 <a href="https://expressjs.com/" target="_blank" rel="noreferrer"> <img alt="Express Badge" src="https://img.shields.io/badge/-Express-000000?style=flat&logo=Express"></a>
 <a href="https://render.com/" target="_blank" rel="noreferrer"> <img alt="Render Badge" src="https://img.shields.io/badge/-Render-000000?style=flat&logo=Render"></a>
 
+*Description will be available after the project is complete*
 
-## Optimizations
-
+## Dev Log
+**Date:** 
 
 ## Lessons Learned:
+*Summary will come after the project is complete*
 
+## More Projects:
+Feel free to explore some of my other projects in my portfolio:
 
-## Examples:
+**Source:** [Source](https://github.com/NomadCode33/DevChronicles/tree/main/Source)
+
+**Ayesha Hair Salon:** [Ayesha Hair Salon](https://github.com/NomadCode33/DevChronicles/tree/main/Ayesha-Hair-Salon)
+<br>
+<br>
+
+**Profile:** [NomadCode33](https://github.com/NomadCode33)
