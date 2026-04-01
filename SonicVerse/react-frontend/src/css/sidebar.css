@@ -1,0 +1,462 @@
+/* ── Hamburger button ──────────────────────────────────────── */
+.sidebar-hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  transition: background-color 0.2s;
+  margin: 0 0.4rem 0 0.5rem;
+  flex-shrink: 0;
+  /*margin-left: 0.4rem;*/
+  /*margin-right: 0.4rem;*/
+}
+
+.sidebar-hamburger:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-hamburger-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  color: #fff;
+  filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5));
+}
+
+/* ── Overlay ───────────────────────────────────────────────── */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.sidebar-overlay--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ── Drawer ────────────────────────────────────────────────── */
+.sidebar-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 27rem;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.3s ease,
+              color 0.3s ease;
+  scrollbar-width: thin;
+}
+
+.sidebar-drawer--open {
+  transform: translateX(0);
+  box-shadow: 0.5rem 0 2rem rgba(0, 0, 0, 0.6);
+}
+
+/* ── Theme: Dark ───────────────────────────────────────────── */
+.sidebar-dark {
+  background-color: #0f1923;
+  color: #e2e8f0;
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.07);
+}
+
+.sidebar-dark .sidebar-section-header:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.sidebar-dark .sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgb(245, 193, 66);
+}
+
+.sidebar-dark .sidebar-link--active {
+  background-color: rgba(50, 100, 230, 0.3);
+  color: rgb(245, 193, 66);
+  border-left: 0.3rem solid rgb(245, 193, 66);
+}
+
+.sidebar-dark .sidebar-logout:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Q2: standalone link — dark theme hover + active */
+.sidebar-dark .sidebar-standalone-link:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.sidebar-dark .sidebar-standalone-link--active {
+  background-color: rgba(50, 100, 230, 0.3);
+  color: rgb(245, 193, 66);
+  border-left: 0.3rem solid rgb(245, 193, 66);
+}
+
+/* Q3: section label link — dark theme */
+.sidebar-dark .sidebar-section-label-link:hover {
+  text-decoration: underline;
+  color: rgb(245, 193, 66);
+}
+
+/* Q2: standalone link — dark theme chevron button */
+.sidebar-dark .sidebar-chevron-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Theme: Light ──────────────────────────────────────────── */
+.sidebar-light {
+  background-color: #f0f4ff;
+  color: #1e2a4a;
+  border-right: 0.1rem solid rgba(0, 36, 173, 0.15);
+}
+
+.sidebar-light .sidebar-section-header:hover {
+  background-color: rgba(0, 36, 173, 0.07);
+}
+
+.sidebar-light .sidebar-link:hover {
+  background-color: rgba(0, 36, 173, 0.1);
+  color: rgb(0, 36, 173);
+}
+
+.sidebar-light .sidebar-link--active {
+  background-color: rgba(0, 36, 173, 0.12);
+  color: rgb(0, 36, 173);
+  border-left: 0.3rem solid rgb(0, 36, 173);
+}
+
+.sidebar-light .sidebar-logout:hover {
+  background-color: rgba(0, 36, 173, 0.07);
+}
+
+/* Q2: standalone link — light theme hover + active */
+.sidebar-light .sidebar-standalone-link:hover {
+  background-color: rgba(0, 36, 173, 0.07);
+}
+
+.sidebar-light .sidebar-standalone-link--active {
+  background-color: rgba(0, 36, 173, 0.12);
+  color: rgb(0, 36, 173);
+  border-left: 0.3rem solid rgb(0, 36, 173);
+}
+
+/* Q3: section label link — light theme */
+.sidebar-light .sidebar-section-label-link:hover {
+  text-decoration: underline;
+  color: rgb(0, 36, 173);
+}
+
+/* Q2: standalone link — light theme chevron button */
+.sidebar-light .sidebar-chevron-btn:hover {
+  background-color: rgba(0, 36, 173, 0.07);
+}
+
+/* ── Close button ──────────────────────────────────────────── */
+.sidebar-close {
+  align-self: flex-end;
+  margin: 1.2rem 1.2rem 0 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.7;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  transition: opacity 0.2s, background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.sidebar-close:hover {
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+/* ── Brand ─────────────────────────────────────────────────── */
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 2rem 2rem 2rem;
+  border-bottom: 0.1rem solid rgba(128, 128, 128, 0.2);
+}
+
+.sidebar-brand-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  filter: drop-shadow(0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5));
+}
+
+.sidebar-brand-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* ── Nav ───────────────────────────────────────────────────── */
+.sidebar-nav {
+  flex: 1;
+  min-height: 0;
+  padding: 1.2rem 0;
+  overflow-y: auto;
+}
+
+/* ── Section ───────────────────────────────────────────────── */
+.sidebar-section {
+  margin-bottom: 0.2rem;
+}
+
+/*
+  Q3: .sidebar-section-header is now a <div> instead of a <button>
+  so it can contain both a <Link> and a <button> as siblings.
+  The hover background is handled by the theme classes above.
+*/
+.sidebar-section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.8rem;
+  transition: background-color 0.2s;
+}
+
+.sidebar-section-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidebar-section-icon {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.sidebar-section-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/*
+  Q3: the label text as a <Link>.
+  Inherits the same typography as .sidebar-section-label.
+  Underlines on hover; color comes from the theme class.
+  text-decoration-offset gives the underline a little breathing room.
+*/
+.sidebar-section-label-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: inherit;
+  text-decoration: none;
+  text-decoration-offset: 3px;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+/*
+  Q3: the chevron lives in its own <button> now, separate from the label.
+  No background by default — just the icon. Hover is handled by theme classes.
+  padding gives it a larger tap target without affecting layout.
+*/
+.sidebar-chevron-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+/* ── Chevron ───────────────────────────────────────────────── */
+.sidebar-chevron {
+  width: 1.6rem;
+  height: 1.6rem;
+  opacity: 0.6;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.sidebar-chevron--open {
+  transform: rotate(180deg);
+}
+
+/* ── Collapsible links ─────────────────────────────────────── */
+.sidebar-links {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  display: flex;        /* 👈 added */
+  flex-direction: column; /* 👈 stacks links vertically */
+}
+
+.sidebar-links--open {
+  max-height: 40rem;
+}
+
+.sidebar-link {
+  display: block;
+  /* originally padding: 0.85rem 2rem 0.85rem 4.8rem;*/
+  padding: 0.85rem 2rem 0.85rem 3.2rem !important; /* 👈 added !important */
+  margin-left: 1.8rem !important;
+  font-size: 1.45rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+  border-left: 0.3rem solid transparent;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/*
+  Q2: standalone link wrapper.
+  display:flex + flex-direction:column makes the <Link> child stretch to
+  full width automatically via align-items default (stretch). This is the
+  key difference from display:block — flex stretch propagates width to
+  inline children like <a> tags, where block width:100% does not.
+*/
+.sidebar-section--standalone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.2rem;
+}
+
+/*
+  Q2: standalone link row.
+  No width:100% needed — the parent flex:column stretches this naturally.
+  align-self:stretch ensures it fills the full row even without explicit width.
+  Everything else matches .sidebar-section-header exactly:
+  same padding, same gap, same font via .sidebar-section-label inside.
+*/
+.sidebar-standalone-link {
+  display: flex;
+  align-items: center;
+  align-self: stretch;   /* fills full width from the flex parent */
+  gap: 1rem;
+  padding: 1rem 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  border-left: 0.3rem solid transparent;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* ── Bottom controls ───────────────────────────────────────── */
+.sidebar-bottom {
+  padding: 1.5rem 2rem;
+  border-top: 0.1rem solid rgba(128, 128, 128, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.sidebar-theme-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-theme-label {
+  font-size: 1.4rem;
+  opacity: 0.85;
+}
+
+/* ── Toggle pill ───────────────────────────────────────────── */
+.sidebar-toggle-pill {
+  position: relative;
+  width: 4.8rem;
+  height: 2.4rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.35);
+  transition: background-color 0.3s;
+  flex-shrink: 0;
+}
+
+.sidebar-toggle-pill--on {
+  background-color: rgb(50, 100, 230);
+}
+
+.sidebar-toggle-knob {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-toggle-pill--on .sidebar-toggle-knob {
+  transform: translateX(2.4rem);
+}
+
+/* ── Logout button ─────────────────────────────────────────── */
+.sidebar-logout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  background-color: rgba(128, 128, 128, 0.12);
+  border: 0.1rem solid rgba(128, 128, 128, 0.2);
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+/******************************************
+/* SMALL PHONE PORTRAIT (≤ 480px)
+/*******************************************/
+/*@media only screen and (max-width: 480px) and (orientation: portrait) {
+
+  .sidebar-drawer {
+    width: 22rem;
+  }
+
+  .sidebar-brand-name {
+    font-size: 1.5rem;
+  }
+
+  .sidebar-section-label {
+    font-size: 1.3rem;
+  }
+
+  .sidebar-link {
+    font-size: 1.3rem;
+    padding: 0.75rem 2rem 0.75rem 3rem !important;
+  }
+
+  .sidebar-theme-label {
+    font-size: 1.2rem;
+  }
+
+  .sidebar-logout {
+    font-size: 1.2rem;
+  }
+
+}*/
