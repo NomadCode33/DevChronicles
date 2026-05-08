@@ -1,7 +1,7 @@
 # Portfolio
 A personal portfolio website that showcases my projects, highlights my skills, and provides clear ways to get in contact with me.
 
-**Link to project:** https://chukwuemekaemeche.netlify.app/
+**Link to project:** https://emeche.netlify.app/
 
 <img src="./assets/images/websiteimg/Website Portfolio.png" img alt = "Portfolio Website"/>
 
